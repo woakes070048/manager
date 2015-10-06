@@ -1,0 +1,10 @@
+{
+  "MAIL": {
+    "PROTOCOL": "smtp",
+    "USERNAME": "denisbrognarddu69@gmail.com",
+    "PASSWORD": "samybrognard",
+    "SERVER": "smtp.gmail.com",
+    "PORT": "465",
+    "ENABLED": false
+  }
+}
