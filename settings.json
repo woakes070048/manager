@@ -1,8 +1,8 @@
 {
   "MAIL": {
     "PROTOCOL": "smtp",
-    "USERNAME": "denisbrognarddu69@gmail.com",
-    "PASSWORD": "samybrognard",
+    "USERNAME": "smalttestings@gmail.com",
+    "PASSWORD": "chRochRo",
     "SERVER": "smtp.gmail.com",
     "PORT": "465",
     "ENABLED": false
