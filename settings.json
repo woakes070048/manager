@@ -4,7 +4,6 @@
     "USERNAME": "smalttestings@gmail.com",
     "PASSWORD": "chRochRo",
     "SERVER": "smtp.gmail.com",
-    "PORT": "465",
-    "ENABLED": false
+    "PORT": "465"
   }
 }
