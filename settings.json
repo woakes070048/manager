@@ -1,9 +1,33 @@
 {
-  "MAIL": {
-    "PROTOCOL": "smtp",
-    "USERNAME": "smalttestings@gmail.com",
-    "PASSWORD": "chRochRo",
-    "SERVER": "smtp.gmail.com",
-    "PORT": "465"
+  "defaultAdmins": [
+    {
+      "email": "slaumonier@smaltcreation.com",
+      "password": "admin!",
+      "profile": {
+        "firstName": "Samy",
+        "lastName": "Laumonier"
+      }
+    }, {
+      "email": "wdhif@smaltcreation.com",
+      "password": "admin!",
+      "profile": {
+        "firstName": "Wassim",
+        "lastName": "Dhif"
+      }
+    }, {
+      "email": "nrouviere@smaltcreation.com",
+      "password": "admin!",
+      "profile": {
+        "firstName": "Nicolas",
+        "lastName": "Rouvière"
+      }
+    }
+  ],
+  "mail": {
+    "protocol": "smtp",
+    "username": "smalttestings@gmail.com",
+    "password": "chRochRo",
+    "server": "smtp.gmail.com",
+    "port": "465"
   }
 }

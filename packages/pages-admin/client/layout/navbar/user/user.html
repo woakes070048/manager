@@ -1,0 +1,27 @@
+<template name="adminLayoutNavbarUser">
+    {{#if currentUser}}
+        <li class="dropdown user user-menu">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="User Image" class="user-image" src="{{avatarUrl currentUser 25}}">
+                <span class="hidden-xs">{{fullName}}</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li class="user-header">
+                    <img alt="User Image" class="img-circle" src="{{avatarUrl currentUser 160}}">
+                    <p>
+                        {{fullName}}
+                        <small>{{email}}</small>
+                    </p>
+                </li>
+                <li class="user-footer">
+                    <div class="pull-left">
+                        <a class="btn btn-default btn-flat" href="#">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-flat" id="sign-out">Sign out</button>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    {{/if}}
+</template>
