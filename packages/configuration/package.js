@@ -21,6 +21,7 @@ Package.onUse(function (api) {
 
     // Server dependencies
     api.use([
+        'accounts-base',
         'accounts-password',
         'mongo',
         'alanning:roles'
@@ -39,7 +40,8 @@ Package.onUse(function (api) {
 
     // Server files
     api.addFiles([
-        'server/admins.js'
+        'server/admins.js',
+        'server/accounts.js'
     ], 'server');
 
     // Lib export

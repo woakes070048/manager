@@ -1,19 +1,6 @@
 <template name="staticNotFoundContent">
     <div class="content-wrapper">
-        <section class="content-header">
-            <h1>
-                404 Error Page
-            </h1>
-            <ol class="breadcrumb">
-                <li>
-                    <a href="{{pathFor 'adminDashboard'}}">
-                        <i class="fa fa-dashboard"></i>
-                        Dashboard
-                    </a>
-                </li>
-                <li class="active">404 error</li>
-            </ol>
-        </section>
+        {{> componentHeader headerOptions}}
         <section class="content">
             <div class="error-page">
                 <h2 class="headline text-yellow"> 404</h2>

@@ -1,0 +1,26 @@
+<template name="componentHeader">
+    <section class="content-header">
+        <h1>
+            {{title}}
+        </h1>
+        <ol class="breadcrumb">
+            {{#each links}}
+                <li {{attributes}}>
+                    {{#if active}}
+                        {{#if icon}}
+                            <i class="fa fa-{{icon}}"></i>
+                        {{/if}}
+                        {{title}}
+                    {{else}}
+                        <a href="{{pathFor route}}">
+                            {{#if icon}}
+                                <i class="fa fa-{{icon}}"></i>
+                            {{/if}}
+                            {{title}}
+                        </a>
+                    {{/if}}
+                </li>
+            {{/each}}
+        </ol>
+    </section>
+</template>

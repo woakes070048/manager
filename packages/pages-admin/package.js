@@ -11,6 +11,7 @@ Package.onUse(function (api) {
     api.use([
         'ecmascript',
         'blaze-html-templates',
+        'manager:pages-components',
         'iron:router',
         'alanning:roles',
         'mfactory:admin-lte',
@@ -32,6 +33,7 @@ Package.onUse(function (api) {
 
         // Dashboard page
         'client/dashboard/dashboard.html',
+        'client/dashboard/dashboard.js',
         'client/dashboard/route.js'
     ], 'client');
 

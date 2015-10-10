@@ -11,6 +11,7 @@ Package.onUse(function (api) {
     api.use([
         'ecmascript',
         'blaze-html-templates',
+        'manager:pages-components',
         'lookback:body-class',
         'mfactory:admin-lte',
         'alanning:roles',
@@ -26,6 +27,8 @@ Package.onUse(function (api) {
 
         // Not found
         'client/notFound/content/content.html',
+        'client/notFound/content/content.css',
+        'client/notFound/content/content.js',
         'client/notFound/notFound.html',
         'client/notFound/notFound.js'
     ], 'client');
