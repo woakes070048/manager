@@ -1,28 +1,41 @@
 {
-  "defaultAdmins": [
-    {
-      "email": "slaumonier@smaltcreation.com",
-      "password": "admin!",
-      "profile": {
-        "firstName": "Samy",
-        "lastName": "Laumonier"
+  "default": {
+    "admins": [
+      {
+        "email": "slaumonier@smaltcreation.com",
+        "password": "admin!",
+        "profile": {
+          "firstName": "Samy",
+          "lastName": "Laumonier"
+        }
+      },
+      {
+        "email": "wdhif@smaltcreation.com",
+        "password": "admin!",
+        "profile": {
+          "firstName": "Wassim",
+          "lastName": "Dhif"
+        }
+      },
+      {
+        "email": "nrouviere@smaltcreation.com",
+        "password": "admin!",
+        "profile": {
+          "firstName": "Nicolas",
+          "lastName": "Rouvière"
+        }
       }
-    }, {
-      "email": "wdhif@smaltcreation.com",
-      "password": "admin!",
-      "profile": {
-        "firstName": "Wassim",
-        "lastName": "Dhif"
+    ],
+    "services": [
+      {
+        "name": "manager",
+        "password": "manager",
+        "options": {
+          "backgroundColor": "#d2d6de"
+        }
       }
-    }, {
-      "email": "nrouviere@smaltcreation.com",
-      "password": "admin!",
-      "profile": {
-        "firstName": "Nicolas",
-        "lastName": "Rouvière"
-      }
-    }
-  ],
+    ]
+  },
   "mail": {
     "protocol": "smtp",
     "username": "smalttestings@gmail.com",

@@ -1,0 +1,11 @@
+<template name="adminLayout">
+    {{#AdminLTE skin=Configuration.LTE.SKIN fixed=true sidebarMini=true}}
+        {{> adminLayoutNavbar}}
+        {{> adminLayoutSidebar}}
+        <div class="content-wrapper">
+            {{> yield}}
+        </div>
+        {{> adminLayoutControl}}
+    {{/AdminLTE}}
+    {{> tooltips}}
+</template>

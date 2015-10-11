@@ -1,0 +1,16 @@
+<template name="adminLayoutSidebar">
+    <div class="main-sidebar">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                {{#each items}}
+                    <li class="{{isActiveRoute route}}">
+                        <a href="{{pathFor route}}">
+                            <i class="fa fa-{{icon}}"></i>
+                            <span>{{title}}</span>
+                        </a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

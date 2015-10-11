@@ -16,7 +16,23 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-manager:configuration   # Configuration
-manager:pages-static    # Static pages
-manager:pages-guest     # Guest pages
-manager:pages-admin     # Admin pages
+iron:router
+accounts-base
+accounts-password
+alanning:roles
+matb33:collection-hooks
+mfactory:admin-lte
+lookback:body-class
+fortawesome:fontawesome
+jparker:gravatar
+momentjs:moment
+rzymek:moment-locales
+aldeed:tabular
+manager:icheck
+kevohagan:sweetalert
+smaltcreation:alert-i18n
+zimme:active-route
+reactive-var
+lookback:tooltips
+fourseven:scss
+gadicohen:prism

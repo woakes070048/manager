@@ -1,0 +1,14 @@
+<template name="componentNotAuthorized">
+    {{#if isInRole Role.ADMIN}}
+        {{#AdminLTE skin=Configuration.LTE.SKIN fixed=true sidebarMini=true}}
+            {{> adminLayoutNavbar}}
+            {{> adminLayoutSidebar}}
+            {{> componentNotAuthorizedContent}}
+            {{> adminLayoutControl}}
+        {{/AdminLTE}}
+    {{else}}
+        {{#AdminLTE skin=Configuration.LTE.SKIN fixed=false sidebarMini=false}}
+            {{> componentNotAuthorizedContent}}
+        {{/AdminLTE}}
+    {{/if}}
+</template>

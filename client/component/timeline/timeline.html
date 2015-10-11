@@ -1,0 +1,11 @@
+<template name="componentTimeline">
+    <ul class="timeline">
+        {{#each items}}
+            {{#if isDate}}
+                {{> componentTimelineDate date=date}}
+            {{else}}
+                {{> componentTimelineItem item=item}}
+            {{/if}}
+        {{/each}}
+    </ul>
+</template>

@@ -1,5 +1,0 @@
-Configuration = {
-    LTE: {
-        SKIN: 'blue'
-    }
-};

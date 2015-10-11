@@ -1,0 +1,14 @@
+<template name="componentNotFound">
+    {{#if isInRole Role.ADMIN}}
+        {{#AdminLTE skin=Configuration.LTE.SKIN fixed=true sidebarMini=true}}
+            {{> adminLayoutNavbar}}
+            {{> adminLayoutSidebar}}
+            {{> componentNotFoundContent}}
+            {{> adminLayoutControl}}
+        {{/AdminLTE}}
+    {{else}}
+        {{#AdminLTE skin=Configuration.LTE.SKIN fixed=false sidebarMini=false}}
+            {{> componentNotFoundContent}}
+        {{/AdminLTE}}
+    {{/if}}
+</template>
