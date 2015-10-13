@@ -3,8 +3,6 @@ Template.adminLogShow.onCreated(function () {
         Collection.Logs,
         'history',
         this.data.log,
-        this.data.log._id,
-        this.data.log.message,
         this.data.log.createdAt,
         'adminLogTimelineItem'
     );

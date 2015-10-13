@@ -1,7 +1,3 @@
-Router.configure({
-    notFoundTemplate: 'componentNotFound'
-});
-
 Template.componentNotFound.onCreated(function () {
     var name = 'sidebar-collapse';
 

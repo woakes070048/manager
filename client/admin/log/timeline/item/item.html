@@ -1,27 +1,33 @@
 <template name="adminLogTimelineItem">
     {{#with doc}}
-        <div class="timeline-body">
-            {{#if details}}
-                {{#prism language='javascript' class='line-numbers' details=details}}
-                    {{json}}
-                {{/prism}}
-            {{else}}
-                No details
-            {{/if}}
-        </div>
-        <div class="timeline-footer">
-            <span class="admin-log-timeline-footer-labels">
-                Service :
-                {{> adminLogService id=service}}
-            </span>
-            <span class="admin-log-timeline-footer-labels">
-                Level :
-                {{> adminLogLevel level=level}}
-            </span>
-            <span class="admin-log-timeline-footer-labels">
-               Tags :
-                {{> adminLogTags tags=tags}}
-            </span>
+        <div class="timeline-item">
+            {{> componentTimelineTime date=createdAt}}
+            <h3 class="timeline-header">
+                {{message}}
+            </h3>
+            <div class="timeline-body">
+                {{#if details}}
+                    {{#prism language='javascript' class='line-numbers' details=details}}
+                        {{json}}
+                    {{/prism}}
+                {{else}}
+                    No details
+                {{/if}}
+            </div>
+            <div class="timeline-footer">
+                <span class="admin-log-timeline-footer-labels">
+                    Service :
+                    {{> adminLogService id=service}}
+                </span>
+                <span class="admin-log-timeline-footer-labels">
+                    Level :
+                    {{> adminLogLevel level=level}}
+                </span>
+                <span class="admin-log-timeline-footer-labels">
+                   Tags :
+                    {{> adminLogTags tags=tags}}
+                </span>
+            </div>
         </div>
     {{/with}}
 </template>

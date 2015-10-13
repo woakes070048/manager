@@ -11,42 +11,33 @@ class TimelineClass {
     }
 
     saveItem (item) {
-        if (_.has(item, 'date')) {
-            this.saveDate(item.date);
-        }
-
-        this.saveData(item);
+        this.saveDate(item.date);
+        this.saveDoc(item);
     }
 
     saveDate (date) {
         date = moment(date).startOf('day').toDate();
 
-        var doc = {
+        var itemDoc = {
             type: this.TYPE_DATE,
             date: date
         };
 
-        var item = this.items.findOne(doc);
+        var item = this.items.findOne(itemDoc);
 
         if (!item) {
-            this.items.insert(doc);
+            this.items.insert(itemDoc);
         }
     }
 
-    saveData (item) {
-        var selector = {
+    saveDoc (item) {
+        this.items.upsert({
             type: this.TYPE_ITEM,
-            'item.collectionName': item.collectionName,
-            'item.id': item.id
-        };
-
-        var modifier = {
-            $set: {
-                item: item
-            }
-        };
-
-        this.items.upsert(selector, modifier);
+            collectionName: item.collectionName,
+            docId: item.doc._id
+        }, {
+            $set: item
+        });
     }
 
     find (sort = 1) {

@@ -1,3 +1,0 @@
-Router.configure({
-    loadingTemplate: 'componentLoading'
-});

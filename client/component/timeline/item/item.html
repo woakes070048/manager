@@ -2,16 +2,7 @@
     {{#with item}}
         <li>
             <i class="fa fa-{{icon}} bg-grey"></i>
-            <div class="timeline-item">
-                <span class="time" data-tooltip="{{ago}}" data-tooltip-direction="n">
-                    <i class="fa fa-clock-o"></i>
-                    {{time}}
-                </span>
-                <h3 class="timeline-header">
-                    {{title}}
-                </h3>
-                {{> Template.dynamic template=template data=data}}
-            </div>
+            {{> Template.dynamic template=template data=data}}
         </li>
     {{/with}}
 </template>
