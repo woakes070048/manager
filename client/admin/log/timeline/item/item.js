@@ -1,5 +1,5 @@
 Template.adminLogTimelineItem.helpers({
-    json: function() {
+    json: function () {
         return JSON.stringify(this.details, null, '\t');
     }
 });

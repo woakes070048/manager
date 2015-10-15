@@ -29,6 +29,8 @@ momentjs:moment
 rzymek:moment-locales
 aldeed:tabular
 manager:icheck
+manager:select2
+manager:http-status-codes
 kevohagan:sweetalert
 smaltcreation:alert-i18n
 zimme:active-route
@@ -36,3 +38,8 @@ reactive-var
 lookback:tooltips
 fourseven:scss
 gadicohen:prism
+aldeed:autoform
+aldeed:autoform-select2
+ongoworks:security
+percolate:synced-cron
+http
