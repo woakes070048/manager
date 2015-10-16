@@ -7,11 +7,6 @@ Template.adminLayoutSidebar.helpers({
                 route: 'adminDashboard'
             },
             {
-                icon: 'history',
-                title: 'Logs',
-                route: 'adminLogList'
-            },
-            {
                 icon: 'globe',
                 title: 'Websites',
                 route: 'adminWebsiteList'
@@ -32,6 +27,11 @@ Template.adminLayoutSidebar.helpers({
                 route: 'adminContactList'
             },
             {
+                icon: 'file',
+                title: 'Documents',
+                route: 'adminDocumentsList'
+            },
+            {
                 icon: 'user',
                 title: 'Users',
                 route: 'adminUserList'
@@ -42,9 +42,9 @@ Template.adminLayoutSidebar.helpers({
                 route: 'adminServiceList'
             },
             {
-                icon: 'file',
-                title: 'Documents',
-                route: 'adminDocumentsList'
+                icon: 'history',
+                title: 'Logs',
+                route: 'adminLogList'
             }
         ];
     }

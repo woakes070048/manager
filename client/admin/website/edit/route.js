@@ -1,4 +1,4 @@
-Router.route('/website/edit/:id', {
+Router.route('/website/:id/edit', {
     name: 'adminWebsiteEdit',
     template: 'adminWebsiteEdit',
     controller: 'AdminController',

@@ -1,16 +1,7 @@
 <template name="adminContactListOptions">
     <div class="btn-group" role="group">
-        <a href="{{pathFor 'adminContactShow' id=_id}}" class="btn btn-xs btn-default">
-            <i class="fa fa-eye"></i>
-            Show
-        </a>
-        <a href="{{pathFor 'adminContactEdit' id=_id}}" class="btn btn-xs btn-default">
-            <i class="fa fa-edit"></i>
-            Edit
-        </a>
-        <button type="button" id="remove" class="btn btn-xs btn-default">
-            <i class="fa fa-trash"></i>
-            Remove
-        </button>
+        {{> componentLinkShow route='adminContactShow' id=_id}}
+        {{> componentLinkEdit route='adminContactEdit' id=_id}}
+        {{> adminContactButtonRemove id=_id}}
     </div>
 </template>

@@ -1,0 +1,7 @@
+<template name="adminUserListOptions">
+    <div class="btn-group" role="group">
+        {{> componentLinkShow route='adminUserShow' id=_id}}
+        {{> componentLinkEdit route='adminUserEdit' id=_id}}
+        {{> adminUserButtonRemove id=_id}}
+    </div>
+</template>

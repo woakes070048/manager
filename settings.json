@@ -6,7 +6,8 @@
         "password": "admin!",
         "profile": {
           "firstName": "Samy",
-          "lastName": "Laumonier"
+          "lastName": "Laumonier",
+          "phone": "+33611513437"
         }
       },
       {
@@ -14,7 +15,8 @@
         "password": "admin!",
         "profile": {
           "firstName": "Wassim",
-          "lastName": "Dhif"
+          "lastName": "Dhif",
+          "phone": "+33629301947"
         }
       },
       {
@@ -22,7 +24,8 @@
         "password": "admin!",
         "profile": {
           "firstName": "Nicolas",
-          "lastName": "Rouvière"
+          "lastName": "Rouvière",
+          "phone": "+33614928325"
         }
       }
     ],

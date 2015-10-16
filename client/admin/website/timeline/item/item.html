@@ -11,8 +11,14 @@
                 {{/prism}}
             </div>
             <div class="timeline-footer">
-                Valid HTTP status codes :
-                {{> adminWebsiteCodes validCodes=validCodes}}
+                <span class="spaced">
+                    {{> componentLinkEdit route='adminWebsiteEdit' id=_id}}
+                    {{> adminWebsiteButtonRemove id=_id redirect=true}}
+                </span>
+                <span class="spaced">
+                    Valid HTTP status codes :
+                    {{> adminWebsiteCodes validCodes=validCodes}}
+                </span>
             </div>
         </div>
     {{/with}}

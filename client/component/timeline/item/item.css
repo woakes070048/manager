@@ -1,0 +1,3 @@
+ul.timeline > li > div.timeline-item > div.timeline-footer span.spaced:not(:last-child) {
+    margin-right: 25px;
+}

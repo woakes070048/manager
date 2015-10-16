@@ -14,8 +14,10 @@
                 </dl>
             </div>
             <div class="timeline-footer">
-                <a href="{{pathFor 'adminContactEdit' id=_id}}" class="btn btn-primary btn-xs" id="edit">Edit</a>
-                <a class="btn btn-danger btn-xs" id="remove">Delete</a>
+                <span class="spaced">
+                    {{> componentLinkEdit route='adminContactEdit' id=_id}}
+                    {{> adminContactButtonRemove id=_id redirect=true}}
+                </span>
             </div>
         </div>
     {{/with}}

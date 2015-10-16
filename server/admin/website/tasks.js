@@ -15,13 +15,21 @@ SyncedCron.add({
                     var response = HTTP.get(website.address);
 
                     if (!_.contains(website.validCodes, response.statusCode)) {
-                        responses.push(response);
+                        responses.push({
+                            date: new Date(),
+                            statusCode: response.statusCode
+                        });
                     }
                 } catch (exception) {
                     if (!_.has(exception, 'response')) {
-                        exceptions.push(exception.toString());
+                        exceptions.push({
+                            date: new Date(),
+                            response: exception.toString()
+                        });
                     }  else {
-                        exceptions.push(exception);
+                        exceptions.push(_.extend(exception, {
+                            date: new Date()
+                        }));
                     }
                 }
             }
