@@ -4,9 +4,9 @@ AutoForm.addHooks(FormId.ADMIN_CONTACT_ADD, {
             id: this.docId
         });
 
-        swal({
+        Bert.alert({
             title: 'Contact added',
-            text: 'Contact successfully added',
+            message: 'Contact successfully added',
             type: 'success'
         });
     }

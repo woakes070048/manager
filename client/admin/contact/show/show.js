@@ -1,6 +1,4 @@
 Template.adminContactShow.onCreated(function () {
-    this.timeline = new Timeline(item);
-
     var item = new TimelineItem(
         Collection.Contacts,
         this.data.contact,
@@ -8,6 +6,8 @@ Template.adminContactShow.onCreated(function () {
         'adminContactTimelineItem',
         'user'
     );
+
+    this.timeline = new Timeline(item);
 });
 
 Template.adminContactShow.helpers({

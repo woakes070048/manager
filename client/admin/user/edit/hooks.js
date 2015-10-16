@@ -13,9 +13,9 @@ AutoForm.addHooks(FormId.ADMIN_USER_EDIT, {
             id: this.docId
         });
 
-        swal({
+        Bert.alert({
             title: 'User edited',
-            text: 'User successfully edited',
+            message: 'User successfully edited',
             type: 'success'
         });
     }

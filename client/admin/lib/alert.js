@@ -6,8 +6,7 @@ SweetAlert = {
             type: 'warning',
             showCancelButton: true,
             confirmButtonText: 'Yes, remove it!',
-            confirmButtonColor: Configuration.COLOR.DANGER,
-            closeOnConfirm: false
+            confirmButtonColor: Configuration.COLOR.DANGER
         }, function (confirmed) {
             if (confirmed) {
                 options.collection.remove(options.id);
@@ -16,9 +15,9 @@ SweetAlert = {
                     options.callback();
                 }
 
-                swal({
+                Bert.alert({
                     title: options.confirmTitle,
-                    text: options.confirmText,
+                    message: options.confirmText,
                     type: 'success'
                 });
             }

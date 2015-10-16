@@ -4,9 +4,9 @@ AutoForm.addHooks(FormId.ADMIN_WEBSITE_ADD, {
             id: this.docId
         });
 
-        swal({
+        Bert.alert({
             title: 'Website added',
-            text: 'Website successfully added',
+            message: 'Website successfully added',
             type: 'success'
         });
     }
