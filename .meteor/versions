@@ -21,7 +21,7 @@ callback-hook@1.0.4
 cfs:http-methods@0.0.30
 check@1.0.6
 coffeescript@1.0.10
-cosmos:browserify@0.8.1
+cosmos:browserify@0.1.4
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.1
@@ -64,6 +64,7 @@ localstorage@1.0.5
 logging@1.0.8
 lookback:body-class@0.3.0
 lookback:tooltips@0.5.2
+manager:configuration@0.0.1
 manager:http-status-codes@0.0.1
 manager:icheck@0.0.1
 manager:select2@0.0.1
@@ -177,6 +178,7 @@ service-configuration@1.0.5
 session@1.1.1
 sha@1.0.4
 smaltcreation:alert-i18n@0.0.3
+smaltcreation:autoform-intl-tel-input@1.0.0
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 srp@1.0.4

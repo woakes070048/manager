@@ -8,5 +8,6 @@ Configuration = {
     LOCALE: 'en',
     COLOR: {
         DANGER: '#DD6B55'
-    }
+    },
+    DEFAULT_COUNTRY: 'US'
 };
