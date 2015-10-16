@@ -1,10 +1,10 @@
 Template.adminUserShow.onCreated(function () {
     var item = new TimelineItem(
         Meteor.users,
-        'user',
         this.data.user,
         this.data.user.createdAt,
-        'adminUserTimelineItem'
+        'adminUserTimelineItem',
+        'user'
     );
 
     this.timeline = new Timeline(item);

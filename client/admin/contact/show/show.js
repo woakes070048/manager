@@ -1,13 +1,13 @@
 Template.adminContactShow.onCreated(function () {
+    this.timeline = new Timeline(item);
+
     var item = new TimelineItem(
         Collection.Contacts,
-        'user',
         this.data.contact,
         this.data.contact.createdAt,
-        'adminContactTimelineItem'
+        'adminContactTimelineItem',
+        'user'
     );
-
-    this.timeline = new Timeline(item);
 });
 
 Template.adminContactShow.helpers({

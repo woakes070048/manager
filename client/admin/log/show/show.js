@@ -1,10 +1,10 @@
 Template.adminLogShow.onCreated(function () {
     var item = new TimelineItem(
         Collection.Logs,
-        'history',
         this.data.log,
         this.data.log.createdAt,
-        'adminLogTimelineItem'
+        'adminLogTimelineItem',
+        'history'
     );
 
     this.timeline = new Timeline(item);

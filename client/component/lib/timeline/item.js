@@ -1,5 +1,5 @@
 class TimelineItemClass {
-    constructor (collection, icon = 'tachometer', doc, date, template) {
+    constructor (collection, doc, date, template, icon = 'tachometer') {
         this.collectionName = collection._name;
         this.icon = icon;
         this.doc = doc;

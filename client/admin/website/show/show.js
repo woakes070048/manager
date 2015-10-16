@@ -1,10 +1,10 @@
 Template.adminWebsiteShow.onCreated(function () {
     var item = new TimelineItem(
         Collection.Websites,
-        'globe',
         this.data.website,
         this.data.website.createdAt,
-        'adminWebsiteTimelineItem'
+        'adminWebsiteTimelineItem',
+        'globe'
     );
 
     this.timeline = new Timeline(item);
