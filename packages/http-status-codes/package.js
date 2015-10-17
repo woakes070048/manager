@@ -19,7 +19,7 @@ Package.onUse(function (api) {
 
     // Lib files
     api.addFiles([
-        'codes.browserify.js'
+        'lib/codes.browserify.js'
     ], both);
 
     // Exports

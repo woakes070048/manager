@@ -1,11 +1,21 @@
-Template.componentNotFound.onCreated(function () {
-    var name = 'sidebar-collapse';
+Template.componentNotFound.helpers({
+    headerOptions: function () {
+        return {
+            title: 'Page not found',
+            links: [
+                {
+                    icon: 'tachometer',
+                    title: 'Dashboard',
+                    route: 'adminDashboard'
+                }, {
+                    active: true,
+                    title: 'Page not found'
+                }
+            ]
+        };
+    }
+});
 
-    this.autorun(function () {
-        if (Roles.userIsInRole(Meteor.userId(), Role.ADMIN)) {
-            BodyClass.remove(name);
-        } else {
-            BodyClass.add(name);
-        }
-    });
+Template.componentNotFound.onRendered(function () {
+    BodyClass.add('no-sidebar');
 });

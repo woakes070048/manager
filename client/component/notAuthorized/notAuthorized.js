@@ -1,14 +1,21 @@
-Template.componentNotAuthorized.onCreated(function () {
-    var name = 'sidebar-collapse';
-    var authorized = 'sidebar-mini fixed';
+Template.componentNotAuthorized.helpers({
+    headerOptions: function () {
+        return {
+            title: 'Not authorized',
+            links: [
+                {
+                    icon: 'tachometer',
+                    title: 'Dashboard',
+                    route: 'adminDashboard'
+                }, {
+                    active: true,
+                    title: 'Not authorized'
+                }
+            ]
+        };
+    }
+});
 
-    this.autorun(function () {
-        if (Roles.userIsInRole(Meteor.userId(), Role.ADMIN)) {
-            BodyClass.remove(name);
-            BodyClass.add(authorized);
-        } else {
-            BodyClass.add(name);
-            BodyClass.remove(authorized);
-        }
-    });
+Template.componentNotAuthorized.onRendered(function () {
+    BodyClass.add('no-sidebar');
 });

@@ -1,5 +1,5 @@
 <template name="adminLayout">
-    {{#AdminLTE skin=Configuration.LTE.SKIN fixed=true sidebarMini=true}}
+    <div class="wrapper">
         {{> adminLayoutNavbar}}
         {{> adminLayoutSidebar}}
         <div class="content-wrapper">
@@ -7,6 +7,6 @@
         </div>
         {{> adminLayoutFooter}}
         {{> adminLayoutControl}}
-    {{/AdminLTE}}
+    </div>
     {{> tooltips}}
 </template>

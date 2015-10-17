@@ -21,7 +21,7 @@ callback-hook@1.0.4
 cfs:http-methods@0.0.30
 check@1.0.6
 coffeescript@1.0.10
-cosmos:browserify@0.1.4
+cosmos:browserify@0.8.1
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.1
@@ -64,6 +64,7 @@ localstorage@1.0.5
 logging@1.0.8
 lookback:body-class@0.3.0
 lookback:tooltips@0.5.2
+manager:admin-lte@0.0.1
 manager:configuration@0.0.1
 manager:http-status-codes@0.0.1
 manager:icheck@0.0.1
@@ -72,7 +73,6 @@ matb33:collection-hooks@0.8.1
 meteor@1.1.9
 meteor-base@1.0.1
 meteorspark:util@0.2.0
-mfactory:admin-lte@0.0.2
 minifiers@1.1.7
 minimongo@1.0.10
 mobile-experience@1.0.1

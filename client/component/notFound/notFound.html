@@ -1,14 +1,17 @@
 <template name="componentNotFound">
-    {{#if isInRole Role.ADMIN}}
-        {{#AdminLTE skin=Configuration.LTE.SKIN fixed=true sidebarMini=true}}
-            {{> adminLayoutNavbar}}
-            {{> adminLayoutSidebar}}
-            {{> componentNotFoundContent}}
-            {{> adminLayoutControl}}
-        {{/AdminLTE}}
-    {{else}}
-        {{#AdminLTE skin=Configuration.LTE.SKIN fixed=false sidebarMini=false}}
-            {{> componentNotFoundContent}}
-        {{/AdminLTE}}
-    {{/if}}
+    <div class="content-wrapper">
+        {{> componentHeader headerOptions}}
+        <section class="content">
+            <div class="error-page">
+                <h2 class="headline text-yellow"> 404</h2>
+                <div class="error-content">
+                    <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+                    <p>
+                        We could not find the page you were looking for.
+                        Meanwhile, you may <a href="{{pathFor 'adminDashboard'}}">return to dashboard</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>

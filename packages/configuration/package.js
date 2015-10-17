@@ -10,9 +10,9 @@ Package.onUse(function (api) {
 
     // Lib files
     api.addFiles([
-        'configuration.js',
-        'logs.js',
-        'roles.js'
+        'lib/configuration.js',
+        'lib/logs.js',
+        'lib/roles.js'
     ], both);
 
     // Exports
