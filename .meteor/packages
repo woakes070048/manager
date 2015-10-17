@@ -23,6 +23,7 @@ reactive-var
 
 manager:admin-lte
 manager:configuration
+manager:hide-show-password
 manager:http-status-codes
 manager:icheck
 manager:select2
@@ -39,6 +40,7 @@ fourseven:scss
 gadicohen:prism
 hausor:autoform-bs-minicolors
 iron:router
+jparker:crypto-aes
 jparker:gravatar
 kevohagan:sweetalert
 lookback:body-class

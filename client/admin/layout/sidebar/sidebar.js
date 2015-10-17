@@ -42,6 +42,11 @@ Template.adminLayoutSidebar.helpers({
                 route: Route.SERVICE_LIST
             },
             {
+                icon: Icon.SERVER,
+                title: 'Servers',
+                route: Route.SERVER_LIST
+            },
+            {
                 icon: Icon.LOG,
                 title: 'Logs',
                 route: Route.LOG_LIST

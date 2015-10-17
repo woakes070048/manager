@@ -33,5 +33,6 @@
     "key": "",
     "secret": "",
     "consumer": ""
-  }
+  },
+  "passphrase": ""
 }

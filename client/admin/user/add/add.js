@@ -25,3 +25,7 @@ Template.adminUserAdd.helpers({
         };
     }
 });
+
+Template.adminUserAdd.onRendered(function () {
+    Utilities.initializePasswordInputs();
+});

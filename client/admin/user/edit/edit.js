@@ -26,3 +26,7 @@ Template.adminUserEdit.helpers({
         };
     }
 });
+
+Template.adminUserEdit.onRendered(function () {
+    Utilities.initializePasswordInputs();
+});

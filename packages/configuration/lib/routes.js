@@ -28,6 +28,10 @@ Route = {
     SERVICE_ADD:        'adminServiceAdd',
     SERVICE_EDIT:       'adminServiceEdit',
     SERVICE_SHOW:       'adminServiceShow',
+    SERVER_LIST:        'adminServerList',
+    SERVER_ADD:         'adminServerAdd',
+    SERVER_EDIT:        'adminServerEdit',
+    SERVER_SHOW:        'adminServerShow',
     LOG_LIST:           'adminLogList',
     LOG_SHOW:           'adminLogShow'
 };

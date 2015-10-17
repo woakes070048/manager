@@ -6,5 +6,7 @@ FormId = {
     ADMIN_USER_ADD:         'form-admin-user-add',
     ADMIN_USER_EDIT:        'form-admin-user-edit',
     ADMIN_SERVICE_ADD:      'form-admin-service-add',
-    ADMIN_SERVICE_EDIT:     'form-admin-service-edit'
+    ADMIN_SERVICE_EDIT:     'form-admin-service-edit',
+    ADMIN_SERVER_ADD:       'form-admin-server-add',
+    ADMIN_SERVER_EDIT:      'form-admin-server-edit'
 };

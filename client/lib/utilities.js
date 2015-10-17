@@ -7,5 +7,8 @@ Utilities = {
         });
 
         return results.join(' ');
+    },
+    initializePasswordInputs: function () {
+        $('input[type="password"]').hideShowPassword(false, true);
     }
 };

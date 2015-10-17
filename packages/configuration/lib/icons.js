@@ -7,5 +7,6 @@ Icon = {
     DOCUMENT:       'file',
     USER:           'user',
     SERVICE:        'exchange',
+    SERVER:         'server',
     LOG:            'history'
 };

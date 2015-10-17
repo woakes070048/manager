@@ -1,0 +1,7 @@
+<template name="adminServerListOptions">
+    <div class="btn-group" role="group">
+        {{> componentLinkShow route=Route.SERVER_SHOW id=_id}}
+        {{> componentLinkEdit route=Route.SERVER_EDIT id=_id}}
+        {{> adminServerButtonRemove id=_id}}
+    </div>
+</template>
