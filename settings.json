@@ -1,4 +1,9 @@
 {
+  "ovh": {
+   "key": "",
+   "secret": "",
+   "consumer": ""
+ },
   "default": {
     "admins": [
       {
