@@ -1,6 +1,6 @@
 AutoForm.addHooks(FormId.ADMIN_WEBSITE_ADD, {
     onSuccess: function () {
-        Router.go('adminWebsiteShow', {
+        Router.go(Route.WEBSITE_SHOW, {
             id: this.docId
         });
 

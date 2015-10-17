@@ -1,5 +1,5 @@
 Router.route('/log/:id/show', {
-    name: 'adminLogShow',
+    name: Route.LOG_SHOW,
     template: 'adminLogShow',
     controller: 'AdminController',
     sidebarNavigation: 'logs',

@@ -1,5 +1,5 @@
 Router.route('/contacts', {
-    name: 'adminContactList',
+    name: Route.CONTACT_LIST,
     template: 'adminContactList',
     controller: 'AdminController',
     sidebarNavigation: 'contacts'

@@ -8,7 +8,7 @@ Template.adminUserButtonRemove.events({
             confirmText: 'The user has been successfully removed.',
             callback: function () {
                 if (_.has(template.data, 'redirect') && template.data.redirect) {
-                    Router.go('adminUserList', {
+                    Router.go(Route.USER_LIST, {
                         id: template.data.id
                     });
                 }

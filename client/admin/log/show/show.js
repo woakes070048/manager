@@ -4,7 +4,7 @@ Template.adminLogShow.onCreated(function () {
         this.data.log,
         this.data.log.createdAt,
         'adminLogTimelineItem',
-        'history'
+        Icon.LOG
     );
 
     this.timeline = new Timeline(item);
@@ -16,8 +16,8 @@ Template.adminLogShow.helpers({
             title: 'Show log',
             links: [
                 {
-                    route: 'adminLogList',
-                    icon: 'history',
+                    route: Route.LOG_LIST,
+                    icon: Icon.LOG,
                     title: 'Logs'
                 },
                 {

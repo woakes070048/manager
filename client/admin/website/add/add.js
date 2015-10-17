@@ -4,8 +4,8 @@ Template.adminWebsiteAdd.helpers({
             title: 'Add new website',
             links: [
                 {
-                    route: 'adminWebsiteList',
-                    icon: 'globe',
+                    route: Route.WEBSITE_LIST,
+                    icon: Icon.WEBSITE,
                     title: 'Websites'
                 },
                 {

@@ -4,8 +4,8 @@ Template.adminContactEdit.helpers({
             title: 'Edit contact',
             links: [
                 {
-                    route: 'adminContactList',
-                    icon: 'suitcase',
+                    route: Route.CONTACT_LIST,
+                    icon: Icon.CONTACT,
                     title: 'Contacts'
                 },
                 {

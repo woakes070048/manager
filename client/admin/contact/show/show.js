@@ -4,7 +4,7 @@ Template.adminContactShow.onCreated(function () {
         this.data.contact,
         this.data.contact.createdAt,
         'adminContactTimelineItem',
-        'user'
+        Icon.USER
     );
 
     this.timeline = new Timeline(item);
@@ -16,8 +16,8 @@ Template.adminContactShow.helpers({
             title: 'Show contact',
             links: [
                 {
-                    route: 'adminContactList',
-                    icon: 'suitcase',
+                    route: Route.CONTACT_LIST,
+                    icon: Icon.CONTACT,
                     title: 'Contacts'
                 },
                 {

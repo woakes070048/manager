@@ -1,5 +1,5 @@
 Router.route('/website/:id/show', {
-    name: 'adminWebsiteShow',
+    name: Route.WEBSITE_SHOW,
     template: 'adminWebsiteShow',
     controller: 'AdminController',
     sidebarNavigation: 'websites',

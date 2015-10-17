@@ -37,6 +37,7 @@ aldeed:tabular
 fortawesome:fontawesome
 fourseven:scss
 gadicohen:prism
+hausor:autoform-bs-minicolors
 iron:router
 jparker:gravatar
 kevohagan:sweetalert
@@ -49,3 +50,5 @@ percolate:synced-cron
 rzymek:moment-locales
 themeteorchef:bert
 zimme:active-route
+meteorhacks:npm
+npm-container

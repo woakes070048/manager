@@ -1,5 +1,5 @@
 Router.route('/contact/:id/show', {
-    name: 'adminContactShow',
+    name: Route.CONTACT_SHOW,
     template: 'adminContactShow',
     controller: 'AdminController',
     sidebarNavigation: 'contacts',

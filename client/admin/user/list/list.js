@@ -5,7 +5,7 @@ Template.adminUserList.helpers({
             links: [
                 {
                     active: true,
-                    icon: 'user',
+                    icon: Icon.USER,
                     title: 'Users'
                 }
             ]
@@ -18,16 +18,9 @@ Template.adminUserList.helpers({
                     type: 'primary',
                     icon: 'plus',
                     title: 'Add new user',
-                    route: 'adminUserAdd'
+                    route: Route.USER_ADD
                 }
             ]
-        };
-    },
-    selector: function () {
-        return {
-            roles: {
-                $in: [Role.ADMIN]
-            }
         };
     }
 });

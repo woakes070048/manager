@@ -4,8 +4,8 @@ Template.adminUserAdd.helpers({
             title: 'Add new user',
             links: [
                 {
-                    route: 'adminUserList',
-                    icon: 'user',
+                    route: Route.USER_LIST,
+                    icon: Icon.USER,
                     title: 'Users'
                 },
                 {

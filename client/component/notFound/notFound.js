@@ -4,7 +4,7 @@ Template.componentNotFound.helpers({
             title: 'Page not found',
             links: [
                 {
-                    icon: 'tachometer',
+                    icon: Icon.DASHBOARD,
                     title: 'Dashboard',
                     route: 'adminDashboard'
                 }, {

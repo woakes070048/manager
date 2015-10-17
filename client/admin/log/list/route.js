@@ -1,11 +1,6 @@
 Router.route('/logs', {
-    name: 'adminLogList',
+    name: Route.LOG_LIST,
     template: 'adminLogList',
     controller: 'AdminController',
-    sidebarNavigation: 'logs',
-    waitOn: function () {
-        return [
-            Meteor.subscribe('adminServicesLabel')
-        ];
-    }
+    sidebarNavigation: 'logs'
 });

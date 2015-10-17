@@ -1,5 +1,5 @@
 Router.route('/websites', {
-    name: 'adminWebsiteList',
+    name: Route.WEBSITE_LIST,
     template: 'adminWebsiteList',
     controller: 'AdminController',
     sidebarNavigation: 'websites'

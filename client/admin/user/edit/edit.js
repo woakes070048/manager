@@ -4,8 +4,8 @@ Template.adminUserEdit.helpers({
             title: 'Edit user',
             links: [
                 {
-                    route: 'adminUserList',
-                    icon: 'user',
+                    route: Route.USER_LIST,
+                    icon: Icon.USER,
                     title: 'Users'
                 },
                 {

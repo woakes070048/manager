@@ -1,5 +1,5 @@
 Router.route('/website/add', {
-    name: 'adminWebsiteAdd',
+    name: Route.WEBSITE_ADD,
     template: 'adminWebsiteAdd',
     controller: 'AdminController',
     sidebarNavigation: 'websites'

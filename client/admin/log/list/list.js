@@ -5,7 +5,7 @@ Template.adminLogList.helpers({
             links: [
                 {
                     active: true,
-                    icon: 'history',
+                    icon: Icon.LOG,
                     title: 'Logs'
                 }
             ]

@@ -5,7 +5,7 @@ Template.adminContactList.helpers({
             links: [
                 {
                     active: true,
-                    icon: 'suitcase',
+                    icon: Icon.CONTACT,
                     title: 'Contacts'
                 }
             ]
@@ -18,7 +18,7 @@ Template.adminContactList.helpers({
                     type: 'primary',
                     icon: 'plus',
                     title: 'Add new contact',
-                    route: 'adminContactAdd'
+                    route: Route.CONTACT_ADD
                 }
             ]
         };

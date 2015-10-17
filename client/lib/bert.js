@@ -4,6 +4,6 @@ Bert.defaults = {
     autoHide: true,
     dismissable: true,
     hideDelay: 3500,
-    style: 'growl-top-right',
+    style: 'growl-bottom-right',
     type: 'default'
 };

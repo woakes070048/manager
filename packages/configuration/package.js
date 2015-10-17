@@ -11,16 +11,24 @@ Package.onUse(function (api) {
     // Lib files
     api.addFiles([
         'lib/configuration.js',
+        'lib/icons.js',
         'lib/logs.js',
-        'lib/roles.js'
+        'lib/roles.js',
+        'lib/routes.js',
+        'lib/security.js',
+        'lib/selectors.js'
     ], both);
 
     // Exports
     api.export([
         'Configuration',
+        'Icon',
         'LogLevel',
         'LogLevelParameters',
         'LogTag',
-        'Role'
+        'Route',
+        'Role',
+        'SecurityMethod',
+        'Selector'
     ], both);
 });

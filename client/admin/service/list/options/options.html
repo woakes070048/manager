@@ -1,0 +1,9 @@
+<template name="adminServiceListOptions">
+    <div class="btn-group" role="group">
+        {{> componentLinkShow route=Route.SERVICE_SHOW id=_id}}
+        {{> componentLinkEdit route=Route.SERVICE_EDIT id=_id}}
+        {{#if removable}}
+            {{> adminServiceButtonRemove id=_id}}
+        {{/if}}
+    </div>
+</template>

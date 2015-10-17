@@ -3,57 +3,57 @@ Template.adminLayoutSidebar.helpers({
         return [
             {
                 name: 'dashboard',
-                icon: 'tachometer',
+                icon: Icon.DASHBOARD,
                 title: 'Dashboard',
                 route: 'adminDashboard'
             },
             {
                 name: 'websites',
-                icon: 'globe',
+                icon: Icon.WEBSITE,
                 title: 'Websites',
-                route: 'adminWebsiteList'
+                route: Route.WEBSITE_LIST
             },
             {
                 name: 'estimates',
-                icon: 'file-text',
+                icon: Icon.ESTIMATE,
                 title: 'Estimates',
-                route: 'adminEstimateList'
+                route: Route.ESTIMATE_LIST
             },
             {
                 name: 'invoices',
-                icon: 'money',
+                icon: Icon.INVOICE,
                 title: 'Invoices',
-                route: 'adminInvoiceList'
+                route: Route.INVOICE_LIST
             },
             {
                 name: 'contacts',
-                icon: 'suitcase',
+                icon: Icon.CONTACT,
                 title: 'Contacts',
-                route: 'adminContactList'
+                route: Route.CONTACT_LIST
             },
             {
                 name: 'documents',
-                icon: 'file',
+                icon: Icon.DOCUMENT,
                 title: 'Documents',
-                route: 'adminDocumentsList'
+                route: Route.DOCUMENT_LIST
             },
             {
                 name: 'users',
-                icon: 'user',
+                icon: Icon.USER,
                 title: 'Users',
-                route: 'adminUserList'
+                route: Route.USER_LIST
             },
             {
                 name: 'services',
-                icon: 'exchange',
+                icon: Icon.SERVICE,
                 title: 'Services',
-                route: 'adminServiceList'
+                route: Route.SERVICE_LIST
             },
             {
                 name: 'logs',
-                icon: 'history',
+                icon: Icon.LOG,
                 title: 'Logs',
-                route: 'adminLogList'
+                route: Route.LOG_LIST
             }
         ];
     },

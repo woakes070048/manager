@@ -9,7 +9,7 @@ AutoForm.addHooks(FormId.ADMIN_USER_EDIT, {
         };
     },
     onSuccess: function () {
-        Router.go('adminUserShow', {
+        Router.go(Route.USER_SHOW, {
             id: this.docId
         });
 

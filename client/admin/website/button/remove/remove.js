@@ -8,7 +8,7 @@ Template.adminWebsiteButtonRemove.events({
             confirmText: 'The website has been successfully removed.',
             callback: function () {
                 if (_.has(template.data, 'redirect') && template.data.redirect) {
-                    Router.go('adminWebsiteList', {
+                    Router.go(Route.WEBSITE_LIST, {
                         id: template.data.id
                     });
                 }

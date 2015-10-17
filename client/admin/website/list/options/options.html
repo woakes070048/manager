@@ -1,7 +1,7 @@
 <template name="adminWebsiteListOptions">
     <div class="btn-group" role="group">
-        {{> componentLinkShow route='adminWebsiteShow' id=_id}}
-        {{> componentLinkEdit route='adminWebsiteEdit' id=_id}}
+        {{> componentLinkShow route=Route.WEBSITE_SHOW id=_id}}
+        {{> componentLinkEdit route=Route.WEBSITE_EDIT id=_id}}
         {{> adminWebsiteButtonRemove id=_id}}
     </div>
 </template>

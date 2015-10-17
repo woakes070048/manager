@@ -1,6 +1,6 @@
 AutoForm.addHooks(FormId.ADMIN_CONTACT_EDIT, {
     onSuccess: function () {
-        Router.go('adminContactShow', {
+        Router.go(Route.CONTACT_SHOW, {
             id: this.docId
         });
 

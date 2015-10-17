@@ -1,7 +1,11 @@
 getNextId = function (collection) {
+    if (typeof collection !== 'string') {
+        collection = collection._name;
+    }
+
     var selector = {
         key: ParameterKey.LAST_ID,
-        collection: collection._name
+        collection: collection
     };
 
     var parameter = Collection.Parameters.findOne(selector);

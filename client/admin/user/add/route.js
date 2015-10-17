@@ -1,5 +1,5 @@
 Router.route('/user/add', {
-    name: 'adminUserAdd',
+    name: Route.USER_ADD,
     template: 'adminUserAdd',
     controller: 'AdminController',
     sidebarNavigation: 'users'
