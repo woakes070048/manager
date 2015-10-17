@@ -1,0 +1,37 @@
+{
+  "default": {
+    "admins": [
+      {
+        "email": "admin@smaltcreation.com",
+        "password": "admin!",
+        "profile": {
+          "firstName": "Admin",
+          "lastName": "Admin",
+          "phone": "+33600000000"
+        }
+      }
+    ],
+    "services": [
+      {
+        "name": "Manager",
+        "password": "manager",
+        "options": {
+          "textColor": "#444444",
+          "backgroundColor": "#d2d6de"
+        }
+      }
+    ]
+  },
+  "mail": {
+    "protocol": "",
+    "username": "",
+    "password": "",
+    "server": "",
+    "port": ""
+  },
+  "ovh": {
+    "key": "",
+    "secret": "",
+    "consumer": ""
+  }
+}
