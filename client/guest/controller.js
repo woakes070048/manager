@@ -14,7 +14,7 @@ GuestController = RouteController.extend({
 
             // Admin
             else if (Roles.userIsInRole(Meteor.user(), Role.ADMIN)) {
-                this.redirect('adminDashboard');
+                this.redirect(Route.DASHBOARD);
             }
 
             // Not authorized

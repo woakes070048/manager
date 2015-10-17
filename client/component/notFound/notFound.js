@@ -6,7 +6,7 @@ Template.componentNotFound.helpers({
                 {
                     icon: Icon.DASHBOARD,
                     title: 'Dashboard',
-                    route: 'adminDashboard'
+                    route: Route.DASHBOARD
                 }, {
                     active: true,
                     title: 'Page not found'

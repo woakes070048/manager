@@ -1,4 +1,5 @@
 Route = {
+    DASHBOARD:          'adminDashboard',
     WEBSITE_LIST:       'adminWebsiteList',
     WEBSITE_ADD:        'adminWebsiteAdd',
     WEBSITE_EDIT:       'adminWebsiteEdit',

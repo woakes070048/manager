@@ -6,7 +6,7 @@ Template.componentNotAuthorized.helpers({
                 {
                     icon: Icon.DASHBOARD,
                     title: 'Dashboard',
-                    route: 'adminDashboard'
+                    route: Route.DASHBOARD
                 }, {
                     active: true,
                     title: 'Not authorized'

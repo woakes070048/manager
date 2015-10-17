@@ -1,5 +1,5 @@
 Router.route('/', {
-    name: 'adminDashboard',
+    name: Route.DASHBOARD,
     template: 'adminDashboard',
     controller: 'AdminController'
 });
