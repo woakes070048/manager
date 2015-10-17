@@ -31,9 +31,10 @@
     ],
     "services": [
       {
-        "name": "manager",
+        "name": "Manager",
         "password": "manager",
         "options": {
+          "textColor": "#444444",
           "backgroundColor": "#d2d6de"
         }
       }
@@ -45,5 +46,10 @@
     "password": "frH2ryXKd72p",
     "server": "smtp.gmail.com",
     "port": "465"
+  },
+  "ovh": {
+    "key": "oCFuMgiftMfhfbyk",
+    "secret": "3wKOjPU9KLVZBwx8wVAIlhbP7XOpE3lJ",
+    "consumer": "wkFpqLQ9uHdS7Fr37S70uF5OH1QUdrXl"
   }
 }

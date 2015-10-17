@@ -4,8 +4,8 @@ Template.adminWebsiteEdit.helpers({
             title: 'Edit website',
             links: [
                 {
-                    route: 'adminWebsiteList',
-                    icon: 'globe',
+                    route: Route.WEBSITE_LIST,
+                    icon: Icon.WEBSITE,
                     title: 'Websites'
                 },
                 {

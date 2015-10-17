@@ -1,5 +1,5 @@
 Router.route('/contact/add', {
-    name: 'adminContactAdd',
+    name: Route.CONTACT_ADD,
     template: 'adminContactAdd',
     controller: 'AdminController'
 });

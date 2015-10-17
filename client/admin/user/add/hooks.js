@@ -1,6 +1,6 @@
 AutoForm.addHooks(FormId.ADMIN_USER_ADD, {
     onSuccess: function (formType, docId) {
-        Router.go('adminUserShow', {
+        Router.go(Route.USER_SHOW, {
             id: docId
         });
 

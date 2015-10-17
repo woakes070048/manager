@@ -4,7 +4,7 @@ Template.adminUserShow.onCreated(function () {
         this.data.user,
         this.data.user.createdAt,
         'adminUserTimelineItem',
-        'user'
+        Icon.USER
     );
 
     this.timeline = new Timeline(item);
@@ -16,8 +16,8 @@ Template.adminUserShow.helpers({
             title: 'Show user',
             links: [
                 {
-                    route: 'adminUserList',
-                    icon: 'user',
+                    route: Route.USER_LIST,
+                    icon: Icon.USER,
                     title: 'Users'
                 },
                 {

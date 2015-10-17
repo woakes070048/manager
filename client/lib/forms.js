@@ -4,5 +4,7 @@ FormId = {
     ADMIN_CONTACT_ADD:      'form-admin-contact-add',
     ADMIN_CONTACT_EDIT:     'form-admin-contact-edit',
     ADMIN_USER_ADD:         'form-admin-user-add',
-    ADMIN_USER_EDIT:        'form-admin-user-edit'
+    ADMIN_USER_EDIT:        'form-admin-user-edit',
+    ADMIN_SERVICE_ADD:      'form-admin-service-add',
+    ADMIN_SERVICE_EDIT:     'form-admin-service-edit'
 };

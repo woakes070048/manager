@@ -8,7 +8,7 @@ Template.adminContactButtonRemove.events({
             confirmText: 'The contact has been successfully removed.',
             callback: function () {
                 if (_.has(template.data, 'redirect') && template.data.redirect) {
-                    Router.go('adminContactList', {
+                    Router.go(Route.CONTACT_LIST, {
                         id: template.data.id
                     });
                 }

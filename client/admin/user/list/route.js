@@ -1,5 +1,5 @@
 Router.route('/users', {
-    name: 'adminUserList',
+    name: Route.USER_LIST,
     template: 'adminUserList',
     controller: 'AdminController'
 });

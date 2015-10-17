@@ -4,7 +4,7 @@ Template.componentNotAuthorized.helpers({
             title: 'Not authorized',
             links: [
                 {
-                    icon: 'tachometer',
+                    icon: Icon.DASHBOARD,
                     title: 'Dashboard',
                     route: 'adminDashboard'
                 }, {

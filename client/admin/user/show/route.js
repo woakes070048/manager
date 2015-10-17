@@ -1,5 +1,5 @@
 Router.route('/user/:id/show', {
-    name: 'adminUserShow',
+    name: Route.USER_SHOW,
     template: 'adminUserShow',
     controller: 'AdminController',
     waitOn: function () {

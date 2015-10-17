@@ -1,0 +1,7 @@
+<template name="adminServiceList">
+    {{> componentHeader headerOptions}}
+    <div class="content">
+        {{> componentActions actionsOptions}}
+        {{> componentTabularList table=TabularTables.ServiceList selector=Selector.getIsServiceSelector}}
+    </div>
+</template>

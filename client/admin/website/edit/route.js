@@ -1,5 +1,5 @@
 Router.route('/website/:id/edit', {
-    name: 'adminWebsiteEdit',
+    name: Route.WEBSITE_EDIT,
     template: 'adminWebsiteEdit',
     controller: 'AdminController',
     waitOn: function () {

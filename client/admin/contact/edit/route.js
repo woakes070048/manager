@@ -1,5 +1,5 @@
 Router.route('/contact/edit/:id', {
-    name: 'adminContactEdit',
+    name: Route.CONTACT_EDIT,
     template: 'adminContactEdit',
     controller: 'AdminController',
     waitOn: function () {

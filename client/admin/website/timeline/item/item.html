@@ -6,13 +6,18 @@
                 {{name}}
             </h3>
             <div class="timeline-body">
-                {{#prism language='javascript' class='line-numbers' details=details}}
-                    {{json}}
-                {{/prism}}
+                <dl class="dl-horizontal">
+                    <dt>Address</dt>
+                    <dd>
+                        <a href="{{address}}">{{address}}</a>
+                    </dd>
+                    <dt>Attempts</dt>
+                    <dd>{{attempts}}</dd>
+                </dl>
             </div>
             <div class="timeline-footer">
                 <span class="spaced">
-                    {{> componentLinkEdit route='adminWebsiteEdit' id=_id}}
+                    {{> componentLinkEdit route=Route.WEBSITE_EDIT id=_id}}
                     {{> adminWebsiteButtonRemove id=_id redirect=true}}
                 </span>
                 <span class="spaced">

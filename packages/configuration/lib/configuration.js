@@ -3,7 +3,7 @@ Configuration = {
         SKIN: 'blue'
     },
     DEFAULT_SERVICE: {
-        NAME: 'manager'
+        NAME: 'Manager'
     },
     LOCALE: 'en',
     COLOR: {

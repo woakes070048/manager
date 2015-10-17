@@ -1,7 +1,7 @@
 <template name="adminContactListOptions">
     <div class="btn-group" role="group">
-        {{> componentLinkShow route='adminContactShow' id=_id}}
-        {{> componentLinkEdit route='adminContactEdit' id=_id}}
+        {{> componentLinkShow route=Route.CONTACT_SHOW id=_id}}
+        {{> componentLinkEdit route=Route.CONTACT_EDIT id=_id}}
         {{> adminContactButtonRemove id=_id}}
     </div>
 </template>

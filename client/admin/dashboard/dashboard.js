@@ -5,7 +5,7 @@ Template.adminDashboard.helpers({
             links: [
                 {
                     active: true,
-                    icon: 'tachometer',
+                    icon: Icon.DASHBOARD,
                     title: 'Dashboard'
                 }
             ]

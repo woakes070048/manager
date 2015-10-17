@@ -39,6 +39,7 @@ fortawesome:fontawesome@4.4.0
 fourseven:scss@3.3.3_3
 gadicohen:prism@1.0.4
 geojson-utils@1.0.4
+hausor:autoform-bs-minicolors@1.0.0
 hot-code-push@1.0.0
 html-tools@1.0.5
 htmljs@1.0.5

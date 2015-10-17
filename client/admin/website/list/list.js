@@ -5,7 +5,7 @@ Template.adminWebsiteList.helpers({
             links: [
                 {
                     active: true,
-                    icon: 'globe',
+                    icon: Icon.WEBSITE,
                     title: 'Websites'
                 }
             ]
@@ -18,7 +18,7 @@ Template.adminWebsiteList.helpers({
                     type: 'primary',
                     icon: 'plus',
                     title: 'Add new website',
-                    route: 'adminWebsiteAdd'
+                    route: Route.WEBSITE_ADD
                 }
             ]
         };

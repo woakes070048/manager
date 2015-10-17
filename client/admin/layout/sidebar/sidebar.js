@@ -2,49 +2,49 @@ Template.adminLayoutSidebar.helpers({
     items: function () {
         return [
             {
-                icon: 'tachometer',
+                icon: Icon.DASHBOARD,
                 title: 'Dashboard',
                 route: 'adminDashboard'
             },
             {
-                icon: 'globe',
+                icon: Icon.WEBSITE,
                 title: 'Websites',
-                route: 'adminWebsiteList'
+                route: Route.WEBSITE_LIST
             },
             {
-                icon: 'file-text',
+                icon: Icon.ESTIMATE,
                 title: 'Estimates',
-                route: 'adminEstimateList'
+                route: Route.ESTIMATE_LIST
             },
             {
-                icon: 'money',
+                icon: Icon.INVOICE,
                 title: 'Invoices',
-                route: 'adminInvoiceList'
+                route: Route.INVOICE_LIST
             },
             {
-                icon: 'suitcase',
+                icon: Icon.CONTACT,
                 title: 'Contacts',
-                route: 'adminContactList'
+                route: Route.CONTACT_LIST
             },
             {
-                icon: 'file',
+                icon: Icon.DOCUMENT,
                 title: 'Documents',
-                route: 'adminDocumentsList'
+                route: Route.DOCUMENT_LIST
             },
             {
-                icon: 'user',
+                icon: Icon.USER,
                 title: 'Users',
-                route: 'adminUserList'
+                route: Route.USER_LIST
             },
             {
-                icon: 'exchange',
+                icon: Icon.SERVICE,
                 title: 'Services',
-                route: 'adminServiceList'
+                route: Route.SERVICE_LIST
             },
             {
-                icon: 'history',
+                icon: Icon.LOG,
                 title: 'Logs',
-                route: 'adminLogList'
+                route: Route.LOG_LIST
             }
         ];
     }

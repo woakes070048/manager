@@ -33,7 +33,13 @@ getRequiredKeys = function (name) {
             keys = ['firstName', 'lastName', 'email', 'phone', 'roles', 'password'];
             break;
         case 'userEdit':
-            keys = ['firstName', 'lastName', 'email', 'phone', 'roles'];
+            keys = _.without(getRequiredKeys('userAdd'), 'password');
+            break;
+        case 'serviceAdd':
+            keys = ['name', 'password', 'textColor', 'backgroundColor'];
+            break;
+        case 'serviceEdit':
+            keys = _.without(getRequiredKeys('serviceAdd'), 'password');
             break;
         default:
             throw new Error('Required keys not defined');
@@ -47,6 +53,9 @@ getOptionalKeys = function (name) {
 
     switch (name) {
         case 'userEdit':
+            keys = ['password'];
+            break;
+        case 'serviceEdit':
             keys = ['password'];
             break;
         default:

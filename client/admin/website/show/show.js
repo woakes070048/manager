@@ -4,7 +4,7 @@ Template.adminWebsiteShow.onCreated(function () {
         this.data.website,
         this.data.website.createdAt,
         'adminWebsiteTimelineItem',
-        'globe'
+        Icon.WEBSITE
     );
 
     this.timeline = new Timeline(item);
@@ -16,8 +16,8 @@ Template.adminWebsiteShow.helpers({
             title: 'Show website',
             links: [
                 {
-                    route: 'adminWebsiteList',
-                    icon: 'globe',
+                    route: Route.WEBSITE_LIST,
+                    icon: Icon.WEBSITE,
                     title: 'Websites'
                 },
                 {
