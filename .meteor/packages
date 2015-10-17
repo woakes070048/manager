@@ -28,6 +28,9 @@ manager:http-status-codes
 manager:icheck
 manager:select2
 
+meteorhacks:npm
+npm-container
+
 smaltcreation:alert-i18n
 smaltcreation:autoform-intl-tel-input
 
@@ -35,6 +38,7 @@ alanning:roles
 aldeed:autoform
 aldeed:autoform-select2
 aldeed:tabular
+em0ney:chartjs
 fortawesome:fontawesome
 fourseven:scss
 gadicohen:prism
@@ -52,5 +56,3 @@ percolate:synced-cron
 rzymek:moment-locales
 themeteorchef:bert
 zimme:active-route
-meteorhacks:npm
-npm-container

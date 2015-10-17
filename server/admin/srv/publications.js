@@ -20,3 +20,15 @@ Meteor.publish('adminServerData', function (id) {
     this.added(Collection.Servers._name, id, transform(server));
     this.ready();
 });
+
+Meteor.publish('adminServerList', function () {
+    if (!Roles.userIsInRole(this.userId, Role.ADMIN)) {
+        return [];
+    }
+
+    return Collection.Servers.find({}, {
+        fields: {
+            name: 1
+        }
+    });
+});

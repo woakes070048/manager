@@ -10,5 +10,8 @@ Template.adminDashboard.helpers({
                 }
             ]
         };
+    },
+    servers: function () {
+        return Collection.Servers.find();
     }
 });

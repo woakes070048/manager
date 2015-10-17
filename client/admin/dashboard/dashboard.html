@@ -2,15 +2,11 @@
     {{> componentHeader headerOptions}}
     <div class="content body">
         <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div class="info-box">
-                    <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-text">Likes</span>
-                        <span class="info-box-number">93,139</span>
-                    </div>
+            {{#each servers}}
+                <div class="col-md-6">
+                    {{> adminServerChart server=this}}
                 </div>
-            </div>
+            {{/each}}
         </div>
     </div>
 </template>
