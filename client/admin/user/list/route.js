@@ -1,5 +1,6 @@
 Router.route('/users', {
     name: 'adminUserList',
     template: 'adminUserList',
-    controller: 'AdminController'
+    controller: 'AdminController',
+    sidebarNavigation: 'users'
 });

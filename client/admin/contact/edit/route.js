@@ -2,6 +2,7 @@ Router.route('/contact/edit/:id', {
     name: 'adminContactEdit',
     template: 'adminContactEdit',
     controller: 'AdminController',
+    sidebarNavigation: 'contacts',
     waitOn: function () {
         return [
             Meteor.subscribe('adminContactData', this.params.id)

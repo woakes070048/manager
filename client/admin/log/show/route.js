@@ -2,6 +2,7 @@ Router.route('/log/:id/show', {
     name: 'adminLogShow',
     template: 'adminLogShow',
     controller: 'AdminController',
+    sidebarNavigation: 'logs',
     waitOn: function () {
         return [
             Meteor.subscribe('adminLogShow', this.params.id),
