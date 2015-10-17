@@ -3,7 +3,7 @@
         <div class="sidebar">
             <ul class="sidebar-menu">
                 {{#each items}}
-                    <li class="{{isActiveNavigation this}} {{isActiveRoute route}}">
+                    <li class="{{isActiveRoute regex=activeRegex}}">
                         <a href="{{pathFor route}}">
                             <i class="fa fa-{{icon}}"></i>
                             <span>{{title}}</span>

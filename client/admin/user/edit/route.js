@@ -2,7 +2,6 @@ Router.route('/user/edit/:id', {
     name: Route.USER_EDIT,
     template: 'adminUserEdit',
     controller: 'AdminController',
-    sidebarNavigation: 'users',
     waitOn: function () {
         return [
             Meteor.subscribe('adminUserData', this.params.id)

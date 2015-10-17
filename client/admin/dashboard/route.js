@@ -1,6 +1,5 @@
 Router.route('/', {
     name: 'adminDashboard',
     template: 'adminDashboard',
-    controller: 'AdminController',
-    sidebarNavigation: 'dashboard'
+    controller: 'AdminController'
 });

@@ -2,72 +2,59 @@ Template.adminLayoutSidebar.helpers({
     items: function () {
         return [
             {
-                name: 'dashboard',
                 icon: Icon.DASHBOARD,
                 title: 'Dashboard',
-                route: 'adminDashboard'
+                route: 'adminDashboard',
+                activeRegex: '^adminDashboard'
             },
             {
-                name: 'websites',
                 icon: Icon.WEBSITE,
                 title: 'Websites',
-                route: Route.WEBSITE_LIST
+                route: Route.WEBSITE_LIST,
+                activeRegex: '^adminWebsite'
             },
             {
-                name: 'estimates',
                 icon: Icon.ESTIMATE,
                 title: 'Estimates',
-                route: Route.ESTIMATE_LIST
+                route: Route.ESTIMATE_LIST,
+                activeRegex: '^adminEstimate'
             },
             {
-                name: 'invoices',
                 icon: Icon.INVOICE,
                 title: 'Invoices',
-                route: Route.INVOICE_LIST
+                route: Route.INVOICE_LIST,
+                activeRegex: '^adminInvoice'
             },
             {
-                name: 'contacts',
                 icon: Icon.CONTACT,
                 title: 'Contacts',
-                route: Route.CONTACT_LIST
+                route: Route.CONTACT_LIST,
+                activeRegex: '^adminContact'
             },
             {
-                name: 'documents',
                 icon: Icon.DOCUMENT,
                 title: 'Documents',
-                route: Route.DOCUMENT_LIST
+                route: Route.DOCUMENT_LIST,
+                activeRegex: '^adminDocument'
             },
             {
-                name: 'users',
                 icon: Icon.USER,
                 title: 'Users',
-                route: Route.USER_LIST
+                route: Route.USER_LIST,
+                activeRegex: '^adminUser'
             },
             {
-                name: 'services',
                 icon: Icon.SERVICE,
                 title: 'Services',
-                route: Route.SERVICE_LIST
+                route: Route.SERVICE_LIST,
+                activeRegex: '^adminService'
             },
             {
-                name: 'logs',
                 icon: Icon.LOG,
                 title: 'Logs',
-                route: Route.LOG_LIST
+                route: Route.LOG_LIST,
+                activeRegex: '^adminLog'
             }
         ];
-    },
-    isActiveNavigation: function (item) {
-        var currentRoute = Router.current().route;
-        if(item.hasOwnProperty('name') && currentRoute.options.hasOwnProperty("sidebarNavigation")){
-            if(item.name == currentRoute.options.sidebarNavigation){
-                return "active";
-            }
-        }else{
-            if(currentRoute.getName() == item.route){
-                return "active";
-            }
-        }
-        return "";
     }
 });
