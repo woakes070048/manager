@@ -11,6 +11,7 @@ Package.onUse(function (api) {
     // Lib files
     api.addFiles([
         'lib/configuration.js',
+        'lib/endpoints.js',
         'lib/icons.js',
         'lib/logs.js',
         'lib/roles.js',
@@ -22,6 +23,7 @@ Package.onUse(function (api) {
     // Exports
     api.export([
         'Configuration',
+        'Endpoint',
         'Icon',
         'LogLevel',
         'LogLevelParameters',

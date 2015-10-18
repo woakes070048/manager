@@ -29,10 +29,5 @@
     "server": "",
     "port": ""
   },
-  "ovh": {
-    "key": "",
-    "secret": "",
-    "consumer": ""
-  },
   "passphrase": ""
 }

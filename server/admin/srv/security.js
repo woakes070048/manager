@@ -3,6 +3,7 @@ Collection.Servers
     .onlyProps([
         'name',
         'serviceName',
+        'endpoint',
         'appKey',
         'appSecret',
         'consumerKey'
