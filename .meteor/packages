@@ -36,6 +36,7 @@ smaltcreation:autoform-intl-tel-input
 
 alanning:roles
 aldeed:autoform
+aldeed:autoform-bs-datetimepicker
 aldeed:autoform-select2
 aldeed:tabular
 em0ney:chartjs
@@ -53,6 +54,7 @@ matb33:collection-hooks
 momentjs:moment
 ongoworks:security
 percolate:synced-cron
-rzymek:moment-locales
+rzymek:fullcalendar
 themeteorchef:bert
+tsega:bootstrap3-datetimepicker@=3.1.3_3
 zimme:active-route

@@ -1,0 +1,40 @@
+<template name="adminEventTimelineItem">
+    {{#with doc}}
+        <div class="timeline-item">
+            {{> componentTimelineTime date=createdAt}}
+            <h3 class="timeline-header">
+                {{title}}
+            </h3>
+            <div class="timeline-body">
+                <dl class="dl-horizontal">
+                    <dt>All day</dt>
+                    <dd>{{allDay}}</dd>
+                    <dt>Start</dt>
+                    <dd>{{formatDate start}}</dd>
+                    {{#if end}}
+                        <dt>End</dt>
+                        <dd>{{formatDate end}}</dd>
+                    {{/if}}
+                    {{#if place}}
+                        <dt>Place</dt>
+                        <dd>{{place}}</dd>
+                    {{/if}}
+                    {{#if contacts}}
+                        <dt>Contacts</dt>
+                        <dd>{{> adminEventContacts contacts=contacts}}</dd>
+                    {{/if}}
+                    {{#if comment}}
+                        <dt>Comment</dt>
+                        <dd>{{comment}}</dd>
+                    {{/if}}
+                </dl>
+            </div>
+            <div class="timeline-footer">
+                <span class="spaced">
+                    {{> componentLinkEdit route=Route.EVENT_EDIT id=_id}}
+                    {{> adminEventButtonRemove id=_id redirect=true}}
+                </span>
+            </div>
+        </div>
+    {{/with}}
+</template>

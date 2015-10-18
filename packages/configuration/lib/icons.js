@@ -5,6 +5,7 @@ Icon = {
     INVOICE:        'money',
     CONTACT:        'suitcase',
     DOCUMENT:       'file',
+    EVENT:          'calendar',
     USER:           'user',
     SERVICE:        'exchange',
     SERVER:         'server',

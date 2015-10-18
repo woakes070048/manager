@@ -45,6 +45,12 @@ Template.adminLayoutSidebar.helpers({
                         title: 'Documents',
                         type: 'item',
                         route: Route.DOCUMENT_LIST
+                    },
+                    {
+                        icon: Icon.EVENT,
+                        title: 'Events',
+                        type: 'item',
+                        route: Route.EVENT_LIST
                     }
                 ]
             },

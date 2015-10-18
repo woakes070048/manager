@@ -1,0 +1,8 @@
+<template name="adminEventContacts">
+    {{#if Template.subscriptionsReady}}
+        {{#each contacts}}
+            {{firstName}} {{lastName}}
+            <br>
+        {{/each}}
+    {{/if}}
+</template>
