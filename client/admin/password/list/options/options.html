@@ -1,0 +1,7 @@
+<template name="adminPasswordListOptions">
+    <div class="btn-group" role="group">
+        {{> componentLinkShow route=Route.PASSWORD_SHOW id=_id}}
+        {{> componentLinkEdit route=Route.PASSWORD_EDIT id=_id}}
+        {{> adminPasswordButtonRemove id=_id}}
+    </div>
+</template>

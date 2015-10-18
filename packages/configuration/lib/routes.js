@@ -33,5 +33,9 @@ Route = {
     SERVER_EDIT:        'adminServerEdit',
     SERVER_SHOW:        'adminServerShow',
     LOG_LIST:           'adminLogList',
-    LOG_SHOW:           'adminLogShow'
+    LOG_SHOW:           'adminLogShow',
+    PASSWORD_LIST:      'adminPasswordList',
+    PASSWORD_ADD:       'adminPasswordAdd',
+    PASSWORD_EDIT:      'adminPasswordEdit',
+    PASSWORD_SHOW:      'adminPasswordShow'
 };

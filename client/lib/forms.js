@@ -8,5 +8,7 @@ FormId = {
     ADMIN_SERVICE_ADD:      'form-admin-service-add',
     ADMIN_SERVICE_EDIT:     'form-admin-service-edit',
     ADMIN_SERVER_ADD:       'form-admin-server-add',
-    ADMIN_SERVER_EDIT:      'form-admin-server-edit'
+    ADMIN_SERVER_EDIT:      'form-admin-server-edit',
+    ADMIN_PASSWORD_ADD:     'form-admin-password-add',
+    ADMIN_PASSWORD_EDIT:    'form-admin-password-edit'
 };

@@ -8,5 +8,6 @@ Icon = {
     USER:           'user',
     SERVICE:        'exchange',
     SERVER:         'server',
-    LOG:            'history'
+    LOG:            'history',
+    PASSWORD:       'lock'
 };

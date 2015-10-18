@@ -1,0 +1,28 @@
+<template name="adminPasswordTimelineItem">
+    {{#with doc}}
+        <div class="timeline-item">
+            {{> componentTimelineTime date=createdAt}}
+            <h3 class="timeline-header">
+                {{name}}
+            </h3>
+            <div class="timeline-body">
+                <dl class="dl-horizontal">
+                    <dt>User Name</dt>
+                    <dd>{{username}}</dd>
+                    {{#if address}}
+                        <dt>Address</dt>
+                        <dd>
+                            <a href="{{address}}">{{address}}</a>
+                        </dd>
+                    {{/if}}
+                </dl>
+            </div>
+            <div class="timeline-footer">
+                <span class="spaced">
+                    {{> componentLinkEdit route=Route.PASSWORD_EDIT id=_id}}
+                    {{> adminPasswordButtonRemove id=_id redirect=true}}
+                </span>
+            </div>
+        </div>
+    {{/with}}
+</template>

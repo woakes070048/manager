@@ -87,6 +87,12 @@ Template.adminLayoutSidebar.helpers({
                         title: 'Services',
                         type: 'item',
                         route: Route.SERVICE_LIST
+                    },
+                    {
+                        icon: Icon.PASSWORD,
+                        title: 'Passwords',
+                        type: 'item',
+                        route: Route.PASSWORD_LIST
                     }
                 ]
             }
