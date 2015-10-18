@@ -1,6 +1,9 @@
 class SidebarUtilsClass {
     constructor (template) {
         this.currentItem = template.data;
+        if(this.currentItem === null){
+            this.currentItem = {};
+        }
     }
 
     template (currentChild){
