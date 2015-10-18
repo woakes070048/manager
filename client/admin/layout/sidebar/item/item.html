@@ -1,0 +1,10 @@
+<template name="adminLayoutSidebarItem">
+    <li class="{{isActive}}">
+        <a href="{{pathFor route}}">
+            {{#if icon}}
+                <i class="fa fa-{{icon}}"></i>
+            {{/if}}
+            {{title}}
+        </a>
+    </li>
+</template>

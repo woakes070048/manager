@@ -1,0 +1,16 @@
+<template name="adminLayoutSidebarList">
+    <li class="treeview {{isActive}}">
+        <a href="#">
+            {{#if icon}}
+                <i class="fa fa-{{icon}}"></i>
+            {{/if}}
+            <span>{{title}}</span>
+            <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+            {{#each children}}
+                {{> template this}}
+            {{/each}}
+        </ul>
+    </li>
+</template>
