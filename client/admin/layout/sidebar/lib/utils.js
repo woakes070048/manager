@@ -6,7 +6,7 @@ class SidebarUtilsClass {
     template (currentChild){
         if(!currentChild.hasOwnProperty('type'))
             throw "The element cannot have no type";
-        if(this.currentItem !== null && currentChild.type === "header")
+        if(this.currentItem.hasOwnProperty('type') && currentChild.type === "header")
             throw "Cannot insert an header inside antoher one in the sidebar";
         return Template[SidebarUtilsClass.typeTemplate(currentChild.type)];
     }
@@ -25,6 +25,10 @@ class SidebarUtilsClass {
                 return me._parse(element);
             })
         }
+        return this._check(item);
+    }
+
+    _check (item){
         if(item.hasOwnProperty('seek')){
             if(item.seek === "self")
                 return ActiveRoute.name(item.route);
