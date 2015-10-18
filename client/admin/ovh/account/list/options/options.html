@@ -1,0 +1,7 @@
+<template name="adminAccountListOptions">
+    <div class="btn-group" role="group">
+        {{> componentLinkShow route=Route.ACCOUNT_SHOW id=_id}}
+        {{> componentLinkEdit route=Route.ACCOUNT_EDIT id=_id}}
+        {{> adminAccountButtonRemove id=_id}}
+    </div>
+</template>

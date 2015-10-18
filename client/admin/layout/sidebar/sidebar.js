@@ -53,16 +53,29 @@ Template.adminLayoutSidebar.helpers({
                 type: 'header',
                 children: [
                     {
-                        icon: Icon.WEBSITE,
-                        title: 'Websites',
-                        type: 'item',
-                        route: Route.WEBSITE_LIST
-                    },
-                    {
-                        icon: Icon.SERVER,
-                        title: 'Servers',
-                        type: 'item',
-                        route: Route.SERVER_LIST
+                        icon: 'industry',
+                        title: 'OVH',
+                        type: 'list',
+                        children: [
+                            {
+                                icon: Icon.ACCOUNT,
+                                title: 'Accounts',
+                                type: 'item',
+                                route: Route.ACCOUNT_LIST
+                            },
+                            {
+                                icon: Icon.SERVER,
+                                title: 'Servers',
+                                type: 'item',
+                                route: Route.SERVER_LIST
+                            },
+                            {
+                                icon: Icon.WEBSITE,
+                                title: 'Websites',
+                                type: 'item',
+                                route: Route.WEBSITE_LIST
+                            }
+                        ]
                     },
                     {
                         icon: Icon.LOG,

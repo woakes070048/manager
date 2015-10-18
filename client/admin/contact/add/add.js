@@ -5,7 +5,7 @@ Template.adminContactAdd.helpers({
             links: [
                 {
                     route: Route.CONTACT_LIST,
-                    icon: Icon.WEBSITE,
+                    icon: Icon.CONTACT,
                     title: 'Contacts'
                 },
                 {
