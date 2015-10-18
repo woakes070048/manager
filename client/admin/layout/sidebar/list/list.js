@@ -7,9 +7,6 @@ Template.adminLayoutSidebarList.helpers({
         return Template.instance().utils.template(this);
     },
     isActive: function () {
-        if(Template.instance().utils.isActive()){
-            return "active";
-        }
-        return false;
+        return Template.instance().utils.isActive() ? 'active' : false;
     }
 });

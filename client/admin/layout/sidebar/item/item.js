@@ -4,9 +4,6 @@ Template.adminLayoutSidebarItem.onCreated(function () {
 
 Template.adminLayoutSidebarItem.helpers({
     isActive: function () {
-        if(Template.instance().utils.isActive()){
-            return "active";
-        }
-        return false;
+        return Template.instance().utils.isActive() ? 'active' : false;
     }
 });

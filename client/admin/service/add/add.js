@@ -9,7 +9,7 @@ Template.adminServiceAdd.helpers({
                     title: 'Services'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Add new service'
                 }
             ]

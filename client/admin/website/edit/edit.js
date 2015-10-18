@@ -9,7 +9,7 @@ Template.adminWebsiteEdit.helpers({
                     title: 'Websites'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Edit website'
                 }
             ]

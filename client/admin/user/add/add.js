@@ -9,7 +9,7 @@ Template.adminUserAdd.helpers({
                     title: 'Users'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Add new user'
                 }
             ]

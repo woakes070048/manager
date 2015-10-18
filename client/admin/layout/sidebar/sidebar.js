@@ -6,7 +6,7 @@ Template.adminLayoutSidebar.helpers({
     items: function () {
         return [
             {
-                title: 'GLOBAL',
+                title: 'Global',
                 type: 'header',
                 children: [
                     {
@@ -19,7 +19,7 @@ Template.adminLayoutSidebar.helpers({
                 ]
             },
             {
-                title: 'CUSTOMERS',
+                title: 'Customers',
                 type: 'header',
                 children: [
                     {
@@ -49,8 +49,8 @@ Template.adminLayoutSidebar.helpers({
                 ]
             },
             {
-                title: "SYSTEMS",
-                type: "header",
+                title: 'Systems',
+                type: 'header',
                 children: [
                     {
                         icon: Icon.WEBSITE,
@@ -73,7 +73,7 @@ Template.adminLayoutSidebar.helpers({
                 ]
             },
             {
-                title: 'ADMINISTRATION',
+                title: 'Administration',
                 type: 'header',
                 children: [
                     {
@@ -91,62 +91,6 @@ Template.adminLayoutSidebar.helpers({
                 ]
             }
         ];
-        /*return [
-            {
-                title: "Administration",
-                type: "header",
-                children: [
-                    {
-                        icon: "cogs",
-                        title: "Settings",
-                        type: "list",
-                        children: [
-                            {
-                                icon: "users",
-                                title: "Users",
-                                type: "item",
-                                seek: 'self',
-                                route: Route.WEBSITE_LIST
-                            },
-                            {
-                                icon: "users",
-                                title: "Users",
-                                type: "list",
-                                children:[
-                                    {
-                                        icon: "users",
-                                        title: "Users2",
-                                        type: "item",
-                                        seek: 'after'
-                                        route: Route.WEBSITE_LIST
-                                    },
-                                    {
-                                        icon: "users",
-                                        title: "Users2",
-                                        type: "list",
-                                        children: [
-                                            {
-                                                icon: "users",
-                                                title: "Users2",
-                                                type: "item",
-                                                route: Route.WEBSITE_LIST
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                icon: "users",
-                                title: "Users",
-                                type: "item",
-                                regex: "^adminWebsite|adminDashboard"
-                                route: Route.WEBSITE_LIST
-                            }
-                        ]
-                    }
-                ]
-            }
-        ];*/
     },
     template: function () {
         return Template.instance().utils.template(this);

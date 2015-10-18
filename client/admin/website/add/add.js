@@ -9,7 +9,7 @@ Template.adminWebsiteAdd.helpers({
                     title: 'Websites'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Add new website'
                 }
             ]

@@ -9,7 +9,7 @@ Template.adminServerEdit.helpers({
                     title: 'Servers'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Edit server'
                 }
             ]

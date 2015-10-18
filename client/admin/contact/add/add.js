@@ -9,7 +9,7 @@ Template.adminContactAdd.helpers({
                     title: 'Contacts'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Add new contact'
                 }
             ]

@@ -9,7 +9,7 @@ Template.adminUserEdit.helpers({
                     title: 'Users'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Edit user'
                 }
             ]

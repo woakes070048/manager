@@ -9,7 +9,7 @@ Template.adminServerAdd.helpers({
                     title: 'Servers'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Add new server'
                 }
             ]

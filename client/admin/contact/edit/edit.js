@@ -9,7 +9,7 @@ Template.adminContactEdit.helpers({
                     title: 'Contacts'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Edit contact'
                 }
             ]

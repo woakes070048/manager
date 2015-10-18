@@ -9,7 +9,7 @@ Template.adminServiceEdit.helpers({
                     title: 'Services'
                 },
                 {
-                    current: true,
+                    active: true,
                     title: 'Edit service'
                 }
             ]
