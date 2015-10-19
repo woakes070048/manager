@@ -1,0 +1,14 @@
+<template name="adminServerStatus">
+    {{#if ready.get}}
+        <div class="info-box">
+            <span class="info-box-icon bg-{{color}}">
+                <i class="fa fa-caret-{{icon}}"></i>
+            </span>
+            <div class="info-box-content">
+                <span class="info-box-text">{{server.name}}</span>
+                <span class="info-box-number server-status">{{label}}</span>
+                <span>{{displayName.get}}</span>
+            </div>
+        </div>
+    {{/if}}
+</template>

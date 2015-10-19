@@ -1,6 +1,13 @@
 <template name="adminDashboard">
     {{> componentHeader headerOptions}}
-    <div class="content body">
+    <div class="content">
+        <div class="row">
+            {{#each servers}}
+                <div class="col-md-3">
+                    {{> adminServerStatus server=this}}
+                </div>
+            {{/each}}
+        </div>
         <div class="row">
             {{#each servers}}
                 <div class="col-md-6">
